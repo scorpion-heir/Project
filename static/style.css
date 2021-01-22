@@ -1,0 +1,81 @@
+.nav-border {
+    padding: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin:10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+li {
+    display: inline;
+    float: left;
+    border-right: 1px solid grey;
+}
+
+li a {
+    padding: 0 40px;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}
+li:last-child {
+    border-right: none;
+}
+
+#redbox{
+    background-color: rgb(197, 46, 46);
+}
+
+
+hr{
+    width: 90%;
+    background-color: black;
+}
+h2 {
+    font: 33px sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+.bottom-text {
+    position: relative;
+    z-index: 1;
+}
+.bottom-text:before {
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right:25%;
+    bottom: 0;
+    width: 60%;
+    z-index: -1;
+    border-top: 2px solid #afafaf;
+    text-align: center;
+}
+.bottom-text span {
+/* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background-color:rgb(255, 255, 255);
+    margin: 1px;
+    margin-left: 20px;
+/* background-color: lawngreen; */
+
+}
+span a{
+    color: rgb(0, 0, 0);
+}
+.centerTop ul li{
+    margin-left: 25px;
+}
+
+}
